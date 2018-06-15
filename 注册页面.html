@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单验证实例</title>
+	<script src="jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/注册页面.css">
+	<link rel="stylesheet" type="text/css" href="css/首页.css">
+
+
+	<style type="text/css">
+		.error{
+			color: red;
+			font-weight: 700;
+			display: none;
+		}
+	
+
+	</style>
+</head>
+<body>
+<div class="top">
+<div class="top_user">
+			<li><a href="登录页面.html">登录/</a></li>
+			<li><a href="注册页面.html">注册</a></li>
+	</div>
+	<div class="top_content">
+		<ul>
+			<li><a href="">联系我们</a></li>
+			<li><a href="">加入收藏</a></li>
+			<li><a href="">设为首页</a></li>
+		</ul>
+	</div>
+</div><!-- top结束-->
+
+<!-- logo部分 -->
+<div class="wrap">
+	<div class="logo">
+		<div class="logo_left">
+			<img src="img/logo.jpg" alt="慕课网">
+		</div>
+		<div class="logo_right">
+			<img src="img/tel.jpg" alt="服务热线"><span class="tel">24小时服务热线：123-456-7890</span>
+		</div>
+	</div>
+</div><!-- logo部分结束 -->
+
+<!-- 导航栏部分 -->
+<div class="nav">
+<div class="nav_left">
+<ul>
+	<li><a href="index.html">首页</a></li>
+	<li><a href="关于慕课.html">关于慕课</a></li>
+	<li><a href="news.html">新闻动态</a></li>
+	<li><a href="课程中心.html">课程中心</a></li>
+	<li><a href="企业合作.html">企业合作</a></li>
+	<li><a href="人才招聘.html">人才招聘</a></li>
+	<li><a href="人力资源.html">人力资源</a></li>
+	<li><a href="联系我们.html">联系我们</a></li>
+</ul>
+</div>
+<div class="nav_right">
+	<form action="" method="post">
+	<input type="text" name="" placeholder="请输入信息" class="search_text">
+	<button type="button" class="button">搜索</button>
+	</form>	
+</div>
+</div>
+<div class="zhuce">
+	<form action="reg.php" method="get">
+	
+	<p>用户名：<input type="name" name="username" class="auth"><span class="error">用户名长度至少6位！</span>
+	</p>
+	
+	<p>密码：<input type="password" name="password" class="auth"><span class="error">密码长度至少8位！</span></p>
+	
+	<p>确认密码:<input type="password" name="repassword" class="auth"><span class="error">密码不一致！</span>
+	</p>
+	
+	<p>邮箱:<input type="text" name="E-mail" class="auth"><span class="error">邮箱格式不正确！</span>
+	</p>
+	
+	<p>手机号:<input type="text" name="phone" class="auth"><span class="error">手机号不正确！</span>
+	</p>
+<div class="button01">
+	<input type="submit" name="注册" value="注册">
+	</div>
+</form>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	//表单验证
+	
+	//用户名验证
+	$('input[name=username]').blur(function(){
+		//alert(1)
+		val=this.value;
+		if (val.length<6) {
+			
+			$(this).next().show()
+		}else{
+			
+			$(this).next().hide()
+		}
+	});
+
+	//密码验证
+	$('input[name=password]').blur(function(){
+		//alert(1)
+		val=this.value;
+		if (val.length<8) {
+			
+			$(this).next().show()
+		}else{
+			
+			$(this).next().hide()
+		}
+	});
+
+	//确认密码验证
+	$('input[name=repassword]').blur(function(){
+		//alert(1)
+		val2=$('input[name=password]').val()
+		val1=this.value;
+		//alert('val2')
+		if (val2!=val1) {
+			
+			$(this).next().show()
+		}else{
+			
+			$(this).next().hide()
+		}
+	});
+	//邮箱验证
+	$('input[name=E-mail]').blur(function(){
+		//alert(1)
+		val=this.value;
+		//alert('val2')
+	if (!val.match(/^\w+@\w+\.\w+$/i)){
+			
+			$(this).next().show()
+		}else{
+			
+			$(this).next().hide()
+		}
+	});
+
+		//手机号验证
+	$('input[name=phone]').blur(function(){
+		//alert(1)
+		val=this.value;
+		//alert('val2')
+	if (!val.match(/^139\d{8}$/)){
+			
+			$(this).next().show()
+		}else{
+			
+			$(this).next().hide()
+		}
+	});
+	
+
+
+var str='12px'
+var s=str.indexof('2')
+alert(s)
+
+</script>

@@ -1,0 +1,49 @@
+
+.zhuce{
+			
+			margin-left: 35%;
+			width: 300px;
+			height: 200px;
+			/*margin: 0 auto;*/
+			margin-top: 5%;
+			position: relative;
+			/*background-color: red;*/
+			line-height: 40px;
+
+		}
+		.zhuce p{
+			font-size: 20px;
+			float: right;
+
+		}
+		.zhuce input{
+			width: 200px;
+			height: 25px;
+		}
+		.zhuce span{
+			font-size: 15px;
+			position: absolute;
+			float: right;
+			width: 500px;
+			height: 100%;
+			/*background-color: yellow;*/
+		}
+		.button01{
+			width: 300px;
+			height: 100%;
+			/*margin: 0 auto;*/
+			margin-top: 2%;
+			float: left;
+			margin-left: 30%;
+		}
+		.button01 input{
+			width: 200px;
+			height: 30px;
+			
+			margin: 0 auto;
+			background-color: #4490f7;
+		}
+		body{
+			/*background-color: #ddd;*/
+			/*background-image: url(img/zhuce01.jpg);*/
+		}

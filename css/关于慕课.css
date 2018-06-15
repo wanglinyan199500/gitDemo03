@@ -1,0 +1,74 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+.gy_text{
+	width: 1000px;
+	height: 500px;
+	margin: 0 auto;
+
+	/*background: red;*/
+}
+.gy_left{
+	width: 25%;
+	height: 100%;
+	float: left;
+	margin-top: 5%;
+	background: white;
+}
+.gy_left img{
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.gy_left ul{
+	
+	list-style: none;
+	line-height: 55px;/*定义行高*/
+	font-size: 20px;
+	margin-top: 15%;
+
+}
+.gy_left ul li{
+	background: gray;
+	font-size: 20px;
+	padding-left: 30%;
+	margin-top: 5%;
+}
+.gy_left ul li a{
+	font-size: 20px;
+	text-decoration: none;
+}
+.gy_right{
+	margin-top: 5%;
+	width: 70%;
+	height: 100%;
+	float: right;
+	background: white;
+}
+.gy_right2{
+	padding: 10px 40px 50px;
+	/*background: red;*/
+
+}
+.tit{
+	font-size: 20px;
+	line-height: 50px;
+	border-bottom: 1px solid black;
+}
+.ConTent{
+	
+	margin-top: 20px;
+}
+.ConTent dt{
+	font-size: 20px;
+	color: #303538;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.ConTent dd{
+
+	 line-height: 15px;
+}
